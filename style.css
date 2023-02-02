@@ -793,7 +793,7 @@ section.footer .texto p {
     }
 
     section.headline {
-        height: 90vh;
+        height: 100%;
     }
 }
 
@@ -843,7 +843,7 @@ section.footer .texto p {
         height: 100%;
     }
 
-    
+
 
     section.headline .container .image {
         align-items: center;
@@ -876,7 +876,7 @@ section.footer .texto p {
 }
 
 @media (max-width: 684px) {
-    
+
 
     header .header_thumb {
         margin-right: 3rem;
@@ -891,23 +891,28 @@ section.footer .texto p {
         width: 48px;
         height: 48px;
     }
-    section.headline{
+
+    section.headline {
         margin: 10rem auto;
     }
+
     section.headline .container {
         text-align: center;
         align-items: center;
         justify-items: center;
         flex-direction: column;
     }
-    section.headline .container .image{
+
+    section.headline .container .image {
         position: relative;
         align-items: flex-end;
     }
-    section.headline .container .image img{
+
+    section.headline .container .image img {
         transform: scale(0.5);
         margin-top: -8rem;
     }
+
     section.headline .container .text {
         width: 100%;
     }
@@ -1018,7 +1023,7 @@ section.footer .texto p {
     }
 
     section.resultados .container .cards-resultado {
-        transform: scale(0.55);
+        transform: scale(0.5);
         margin-top: -20rem;
     }
 
@@ -1028,11 +1033,13 @@ section.footer .texto p {
 
     section.footer .texto {
         transform: scale(0.85);
-        margin: 0;
+        margin: auto auto;
     }
 }
+
 @media (max-width: 372px) {
 
     html {
         font-size: 38%;
-    }}
+    }
+}
