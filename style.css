@@ -216,7 +216,8 @@ section.clientes .container-logos .menu .slide-items>* {
     top: 0px;
     opacity: 0;
     pointer-events: none;
-    margin: auto;}
+    margin: auto;
+}
 
 section.clientes .container-logos .menu .slide-items>.active {
     position: relative;
@@ -774,7 +775,7 @@ section.footer .texto {
     height: 80%;
     align-items: center;
     justify-items: center;
-
+    justify-content: center;
     margin: 0 20px;
 }
 
@@ -795,7 +796,7 @@ section.footer .texto p {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1230px) {
     html {
         font-size: 52%;
     }
@@ -832,7 +833,7 @@ section.footer .texto p {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 884px) {
     html {
         font-size: 45%;
     }
@@ -870,12 +871,16 @@ section.footer .texto p {
         height: 680px;
     }
 
+    section.clientes .container-logos .menu .slide {
+        width: 100%;
+    }
+
     section.bio {
         height: 680px;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 684px) {
     section.headline .container .text {
         width: 100%;
     }
@@ -950,10 +955,16 @@ section.footer .texto p {
 
     section.footer .texto {
         width: 100%;
+        height: 100%;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 328px) {
+
+    html {
+        font-size: 42%;
+    }
+
     header .header_thumb {
         align-items: center;
         justify-items: center;
@@ -986,17 +997,17 @@ section.footer .texto p {
     section.clientes .container-logos .menu .slide {
         width: 100%;
     }
-    section.exemplos {
-    
-    }
+
     section.exemplos .test .container-depo .slider {
         transform: scale(0.5);
         margin-top: -15rem;
-    
+
     }
-    section.exemplos .container-depo{
+
+    section.exemplos .container-depo {
         margin-top: 15rem;
     }
+
     section.resultados .container .cards-resultado {
         transform: scale(0.55);
         margin-top: -20rem;
@@ -1004,5 +1015,10 @@ section.footer .texto p {
 
     section.test .resultados {
         margin-top: -20rem;
+    }
+
+    section.footer .texto {
+        transform: scale(0.85);
+        margin: 0;
     }
 }
