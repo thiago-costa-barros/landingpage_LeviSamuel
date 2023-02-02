@@ -21,11 +21,18 @@ body {
 }
 
 body {
+    width: 100%;
     font-size: 1.6rem;
     background-image: linear-gradient(to right, #e4e4e4, #9697aa);
 }
 
 /*TEXTOS*/
+h1 {
+    color: #4B50A0;
+    font-size: 4.4rem;
+    line-height: 5.4rem;
+    font-weight: 1000;
+}
 
 h2 {
     color: #4B50A0;
@@ -58,34 +65,34 @@ header {
     background-color: #4B50A0;
 }
 
-.header_container {
-    width: 90%;
-    max-width: 1080px;
+header .header_container {
+    width: 50%;
     margin: 0 20px;
     display: flex;
 }
 
-.header_container img {
+header .header_container img {
     width: 20rem;
+    filter: invert(1);
 }
 
-.header_thumb {
-    position: relative;
+header .header_thumb {
+    width: 50%;
     left: 0;
     bottom: 0;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.header_thumb li {
+header .header_thumb li {
     list-style: none;
     display: inline-block;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.header_thumb li a svg {
+header .header_thumb li a svg {
     overflow: visible;
     width: 8rem;
     height: 8rem;
@@ -93,34 +100,40 @@ header {
 }
 
 section.headline {
-    margin-top: 100px;
-    max-width: 980;
+    height: 75vh;
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
 }
 
 section.headline .container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 section.headline .container .text {
     width: 50%;
     margin: 0 auto;
-    padding-left: 35rem;
+    padding-left: 15rem;
 }
 
 section.headline .container .image {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 section.headline .container .image img {
-    margin-top: -20rem;
-    transform: scale(.7);
+    margin: 0 auto;
 }
 
 section.headline .button {
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     font-weight: 600;
     color: rgb(226, 226, 226);
     background-color: #8E4ED4;
@@ -137,18 +150,17 @@ section.headline .button:hover {
 }
 
 section.clientes {
-    width: 100%;
-    height: 540px;
+    width: 80%;
+    height: 100vh;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-items: center;
+    justify-content: space-around;
     margin: 0 auto;
-    margin-top: -10rem;
-
 }
 
 section.clientes .container-logos {
-    max-width: 1080px;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -158,21 +170,22 @@ section.clientes .container-logos {
 
 section.clientes .container-logos .text {
     width: 100%;
+    text-align: center;
     margin: 0 auto;
     align-items: center;
     justify-items: center;
 }
 
-section.clientes .container-logos .text h3 {
+section.clientes .container-logos .text h2 {
     margin: 0 auto;
 }
 
 section.clientes .container-logos .menu {
     width: 100%;
-    height: 20rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+
 }
 
 section.clientes .container-logos .menu img {
@@ -182,8 +195,8 @@ section.clientes .container-logos .menu img {
 }
 
 section.clientes .container-logos .menu .slide {
-    width: 32rem;
-    height: 32rem;
+    width: 48rem;
+    height: 48rem;
     margin: 0 auto;
     display: grid;
 }
@@ -203,10 +216,7 @@ section.clientes .container-logos .menu .slide-items>* {
     top: 0px;
     opacity: 0;
     pointer-events: none;
-    margin: auto;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-}
+    margin: auto;}
 
 section.clientes .container-logos .menu .slide-items>.active {
     position: relative;
@@ -258,21 +268,71 @@ section.clientes .container-logos .menu .slide-thumb>span.active::after {
     /*animation: thumb 5s forwards linear;*/
 }
 
+section.clientes .container-button {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+section.clientes .container-button .text {
+    text-align: center;
+    text-justify: auto;
+    margin: 2rem 8rem;
+}
+
+section.clientes .container-button .text h2 {
+    font-size: 3.8rem;
+    margin: 1rem auto;
+}
+
+section.clientes .container-button .text h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #4B50A0;
+    text-align: center;
+}
+
+section.clientes .button {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(226, 226, 226);
+    background-color: #8E4ED4;
+    margin: 15px 0px 0px;
+    padding: 12px 60px;
+    text-decoration: none;
+    border-radius: 24px;
+    transition: all 150ms linear 0s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+section.clientes .button:hover {
+    opacity: 0.8;
+}
+
 @keyframes thumb {
     to {
         transform: initial;
     }
 }
 
+section.exemplos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 5rem;
+}
+
 section.test {
     width: 100%;
-    height: 540px;
     display: flex;
     align-items: flex-start;
     justify-items: center;
     margin: 0 auto;
     justify-content: space-between;
-    margin-top: -10rem;
 
 }
 
@@ -343,6 +403,7 @@ section.test .container-depo .round {
     width: 40px;
     height: 40px;
     border-radius: 100%;
+    filter: invert(1);
 
 }
 
@@ -448,20 +509,17 @@ section.test .resultados .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: flex-end;
 }
 
 section.test .resultados .container .text {
-    margin: 0 0;
-    align-items: flex-start;
+    align-items: center;
 }
+
 
 section.test .resultados .swiper {
     width: 620px;
     height: 100%;
-}
-
-.cards-resultado {
-    margin: 0 0;
 }
 
 section.test .resultados .card {
@@ -488,6 +546,7 @@ section.test .resultados .card .card-content {
     padding: 30px;
     position: relative;
     z-index: 100;
+    cursor: grab;
 }
 
 section.test .resultados .card .image {
@@ -562,28 +621,13 @@ section.test .resultados .swiper-pagination-bullet {
 }
 
 
-section.test .resultados .swiper-button-next,
-.swiper-button-prev,
-.--swiper-theme-color {
-    opacity: 0.7;
-    color: #34376E;
-    transition: all 0.3s ease-in-out;
-}
-
-section.test .resultados .swiper-button-next:hover,
-.swiper-button-prev,
-.--swiper-theme-color:hover {
-    opacity: 1;
-    color: #6F78ED;
-}
 
 section.sale-button {
     width: 100%;
-    height: 540px;
+    margin-top: 10rem;
     display: flex;
     align-items: center;
     justify-items: center;
-    margin: 0 auto;
 }
 
 section.sale-button .button {
@@ -608,14 +652,14 @@ section.bio {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-items: center;
-    margin: 0 auto;
-    margin-top: -20rem;
 }
 
 section.bio .container {
     width: 100%;
+    margin-top: 30rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -625,7 +669,6 @@ section.bio .testimonial {
     position: relative;
     max-width: 900px;
     width: 100%;
-    padding: 80px 0;
     overflow: hidden;
 }
 
@@ -676,6 +719,28 @@ section.bio .details .job {
     color: #4B50A0;
 }
 
+
+section.bio .thumb-container {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+section.bio .thumb-container li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+section.bio .thumb-container li a svg {
+    overflow: visible;
+    width: 8rem;
+    height: 8rem;
+    transform: scale(0.5);
+}
+
 section.footer {
     width: 100%;
     height: 70px;
@@ -701,6 +766,7 @@ section.footer .container .logo {
 
 section.footer .container img {
     width: 20rem;
+    filter: invert(1);
 }
 
 section.footer .texto {
@@ -717,4 +783,226 @@ section.footer .texto p {
     font-size: 1.6rem;
     line-height: 1.2rem;
     text-align: right;
+}
+
+@media (max-width: 1440px) {
+    html {
+        font-size: 60%;
+    }
+
+    section.headline {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 52%;
+    }
+
+    section.headline .container .text {
+        padding-left: 5rem;
+    }
+
+    section.headline .container .image img {
+        transform: scale(0.8);
+    }
+
+    section.clientes {
+        flex-direction: column;
+    }
+
+    section.clientes .container-button .text {
+        text-align: center;
+        text-justify: auto;
+        margin: 0rem auto;
+        margin-top: 5rem;
+    }
+
+    section.test {
+        flex-direction: column;
+    }
+
+
+
+    section.exemplos .container-depo,
+    .resultados {
+        margin: 5rem auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    section.headline {
+        height: 882px;
+    }
+
+    section.headline .container {
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        margin-top: 8rem;
+    }
+
+    section.headline .container .image {
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: -15rem;
+    }
+
+    section.headline .container .image img {
+        transform: scale(0.6);
+
+    }
+
+    section.headline .container .text {
+        padding-left: 0;
+    }
+
+    section.clientes {
+        height: 680px;
+    }
+
+    section.bio {
+        height: 680px;
+    }
+}
+
+@media (max-width: 425px) {
+    section.headline .container .text {
+        width: 100%;
+    }
+
+    section.clientes .container-logos {
+        width: 100%;
+        margin: 0;
+    }
+
+    section.clientes .container-logos .menu {
+        transform: scale(0.9);
+    }
+
+    section.exemplos .container-depo {
+        height: 620px;
+        width: 100vw;
+        margin: 0;
+    }
+
+    section.clientes .container-button {
+        width: 100%;
+    }
+
+    section.exemplos .test .container-depo .slider {
+        margin: 0;
+        margin-top: -5rem;
+        transform: scale(0.6);
+    }
+
+    section.test .resultados {
+        width: 100vw;
+        margin: 0;
+    }
+
+    section.resultados .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    section.resultados .container .cards-resultado {
+        transform: scale(0.65);
+        margin-top: -15rem;
+    }
+
+    section.test .resultados .swiper-pagination {
+        position: relative;
+        margin-top: -15rem;
+    }
+
+    section.bio {
+        height: 580px;
+    }
+
+    section.bio .container {
+        height: 100%;
+        margin: 0;
+        margin-top: 5rem;
+    }
+
+    section.bio .container .details {
+        margin-top: -5rem;
+    }
+
+    section.bio .container p {
+        padding: 0 24px;
+        margin: 0;
+    }
+
+    section.bio .thumb-container {
+        margin-bottom: 5rem;
+    }
+
+    section.footer .texto {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    header .header_thumb {
+        align-items: center;
+        justify-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    header .header_thumb li {
+        width: 28px;
+        height: 28px;
+        margin: 0 auto;
+    }
+
+    header .header_thumb li a svg {
+        width: 48px;
+        height: 48px;
+    }
+
+    section.clientes .container-logos {
+        width: 100%;
+        margin: 0;
+    }
+
+    section.clientes .container-logos .menu {
+        margin: 0 auto;
+        align-items: center;
+        justify-items: center;
+    }
+
+    section.clientes .container-logos .menu .slide {
+        width: 100%;
+    }
+    section.exemplos {
+    
+    }
+    section.exemplos .test .container-depo .slider {
+        transform: scale(0.5);
+        margin-top: -15rem;
+    
+    }
+    section.exemplos .container-depo{
+        margin-top: 15rem;
+    }
+    section.resultados .container .cards-resultado {
+        transform: scale(0.55);
+        margin-top: -20rem;
+    }
+
+    section.test .resultados {
+        margin-top: -20rem;
+    }
 }
