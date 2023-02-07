@@ -791,10 +791,6 @@ section.footer .texto p {
     html {
         font-size: 60%;
     }
-
-    section.headline {
-        height: 100%;
-    }
 }
 
 @media (max-width: 1230px) {
@@ -818,7 +814,6 @@ section.footer .texto p {
         text-align: center;
         text-justify: auto;
         margin: 0rem auto;
-        margin-top: 5rem;
     }
 
     section.test {
@@ -834,7 +829,7 @@ section.footer .texto p {
 
 }
 
-@media (max-width: 884px) {
+@media (max-width: 896px) {
     html {
         font-size: 45%;
     }
@@ -863,7 +858,7 @@ section.footer .texto p {
     }
 
     section.clientes {
-        height: 680px;
+        height: 884px;
     }
 
     section.clientes .container-logos .menu .slide {
@@ -919,7 +914,7 @@ section.footer .texto p {
 
     section.clientes .container-logos {
         width: 100%;
-        margin: 0;
+        margin-top: 20%;
     }
 
     section.clientes .container-logos .menu {
@@ -928,8 +923,8 @@ section.footer .texto p {
 
     section.exemplos .container-depo {
         height: 620px;
-        width: 100vw;
-        margin: 0;
+        width: 75vw;
+        margin: 0 auto;
     }
 
     section.clientes .container-button {
@@ -938,22 +933,21 @@ section.footer .texto p {
 
     section.exemplos .test .container-depo .slider {
         margin: 0;
-        margin-top: -5rem;
-        transform: scale(0.6);
+        margin-top: -20%;
+        transform: scale(0.52);
     }
 
     section.test .resultados {
-        width: 100vw;
-        margin: 0;
+        width:100%;
     }
 
     section.resultados .container {
-        width: 100%;
+        width: 80%;
         margin: 0;
     }
 
     section.resultados .container .cards-resultado {
-        transform: scale(0.65);
+        transform: scale(0.55);
         margin-top: -15rem;
     }
 
@@ -988,10 +982,11 @@ section.footer .texto p {
     section.footer .texto {
         width: 100%;
         height: 100%;
+        align-items: center;
     }
 }
 
-@media (max-width: 372px) {
+@media (max-width: 376px) {
 
     html {
         font-size: 42%;
